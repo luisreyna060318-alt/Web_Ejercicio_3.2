@@ -2,19 +2,40 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  overflow: hidden;
   background: var(--superficie);
   border: 1px solid var(--borde);
   border-radius: 12px;
-}
-
-.lista-compacta__elemento {
-  padding: 10px 16px;
 }
 
 .lista-compacta__elemento + .lista-compacta__elemento {
   border-top: 1px solid var(--borde);
 }
 
-.lista-compacta__elemento strong {
+.lista-compacta__contenido {
+  display: block;
+  padding: 10px 16px;
+}
+
+.lista-compacta__contenido strong {
   color: var(--texto-titulo);
+}
+
+.lista-compacta__boton {
+  width: 100%;
+  font: inherit;
+  text-align: left;
+  color: inherit;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.lista-compacta__boton:hover {
+  background: var(--acento-fondo);
+}
+
+.lista-compacta__boton:focus-visible {
+  outline: 2px solid var(--acento);
+  outline-offset: -2px;
 }

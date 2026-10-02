@@ -3,3 +3,28 @@
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 20px;
 }
+
+.lista-tarjetas__seleccionable {
+  display: flex;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+
+.lista-tarjetas__seleccionable > .tarjeta-usuario {
+  flex: 1;
+  transition: border-color 0.15s;
+}
+
+.lista-tarjetas__seleccionable:hover {
+  transform: translateY(-2px);
+}
+
+.lista-tarjetas__seleccionable:hover > .tarjeta-usuario {
+  border-color: var(--acento);
+}
+
+.lista-tarjetas__seleccionable:focus-visible {
+  outline: 2px solid var(--acento);
+  outline-offset: 3px;
+}

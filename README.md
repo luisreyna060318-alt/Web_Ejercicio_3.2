@@ -28,6 +28,7 @@ src/
     ejercicio-3/   PaginaPerfil = Encabezado + TarjetaUsuario + PiePagina
     ejercicio-4/   datos.ts (grupos de Extra-Liebres) + ListaDeTarjetas con map()
     ejercicio-5/   Buscador (useState: texto de búsqueda y vista) + ListaCompacta
+    ejercicio-6/   PaginaCatalogo = Encabezado + SelectorOrden + Buscador + PiePagina
   App.tsx          muestra cada ejercicio en su propia sección
 ```
 
@@ -38,4 +39,4 @@ src/
 - [x] Ejercicio 3 — Composición: una página armada de varios componentes
 - [x] Ejercicio 4 — Listas: renderizar una colección de tarjetas
 - [x] Ejercicio 5 — Estado con useState
-- [ ] Ejercicio 6 — Reto integrador: una página completa
+- [x] Ejercicio 6 — Reto integrador: una página completa

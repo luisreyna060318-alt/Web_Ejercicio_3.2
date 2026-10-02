@@ -6,16 +6,19 @@ import './Buscador.css';
 
 interface BuscadorProps {
   grupos: Grupo[];
+  // Opcional (se agregó en el Ejercicio 6): Buscador no la usa, solo la pasa
+  // a la lista que esté mostrando para que el clic llegue hasta el padre.
+  onSeleccionar?: (grupo: Grupo) => void;
 }
 
 // Minúsculas y sin acentos, para que "futbol" o "FÚTBOL" encuentren "Fútbol".
 function normalizar(texto: string) {
-  return texto.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+  return texto.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 }
 
 // Ejercicio 5: el estado vive aquí porque Buscador es el componente que
 // contiene tanto los controles que lo cambian como la lista que lo usa.
-function Buscador({ grupos }: BuscadorProps) {
+function Buscador({ grupos, onSeleccionar }: BuscadorProps) {
   // Estado 1: texto escrito; se reemplaza en cada pulsación de tecla.
   const [textoBusqueda, setTextoBusqueda] = useState('');
   // Estado 2: booleano que se invierte en cada clic del botón.
@@ -57,9 +60,9 @@ function Buscador({ grupos }: BuscadorProps) {
       )}
       {gruposFiltrados.length > 0 &&
         (vistaCompacta ? (
-          <ListaCompacta grupos={gruposFiltrados} />
+          <ListaCompacta grupos={gruposFiltrados} onSeleccionar={onSeleccionar} />
         ) : (
-          <ListaDeTarjetas grupos={gruposFiltrados} />
+          <ListaDeTarjetas grupos={gruposFiltrados} onSeleccionar={onSeleccionar} />
         ))}
     </div>
   );

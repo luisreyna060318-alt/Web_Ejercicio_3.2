@@ -4,6 +4,7 @@ import PaginaPerfil from './ejercicios/ejercicio-3/PaginaPerfil';
 import { grupos } from './ejercicios/ejercicio-4/datos';
 import ListaDeTarjetas from './ejercicios/ejercicio-4/ListaDeTarjetas';
 import Buscador from './ejercicios/ejercicio-5/Buscador';
+import PaginaCatalogo from './ejercicios/ejercicio-6/PaginaCatalogo';
 import './App.css';
 
 function App() {
@@ -55,6 +56,16 @@ function App() {
           Escribe el nombre de una actividad para filtrar los grupos de Extra-Liebres.
         </p>
         <Buscador grupos={grupos} />
+      </section>
+
+      <section className="app__ejercicio">
+        <h2 className="app__titulo-ejercicio">Ejercicio 6 — Reto integrador: una página completa</h2>
+        <p className="app__nota">
+          Haz clic en un grupo y abre la consola del navegador (F12) para ver cuál se seleccionó.
+        </p>
+        <div className="app__marco-pagina app__marco-pagina--ancho">
+          <PaginaCatalogo grupos={grupos} />
+        </div>
       </section>
     </main>
   );
