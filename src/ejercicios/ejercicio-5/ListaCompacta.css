@@ -1,0 +1,20 @@
+.lista-compacta {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: 12px;
+}
+
+.lista-compacta__elemento {
+  padding: 10px 16px;
+}
+
+.lista-compacta__elemento + .lista-compacta__elemento {
+  border-top: 1px solid var(--borde);
+}
+
+.lista-compacta__elemento strong {
+  color: var(--texto-titulo);
+}

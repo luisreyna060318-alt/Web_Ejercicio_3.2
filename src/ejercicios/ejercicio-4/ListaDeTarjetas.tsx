@@ -14,6 +14,9 @@ function ListaDeTarjetas({ grupos }: ListaDeTarjetasProps) {
       {grupos.map((grupo) => (
         // key = id único del grupo: ni el título (se repite) ni el índice
         // (cambia si la lista se reordena o se filtra).
+        // TarjetaUsuario se reutiliza tal cual del Ejercicio 2: su prop
+        // "tecnologias" es la lista de etiquetas de la tarjeta, que para un
+        // grupo son el día, el horario y el aula.
         <TarjetaUsuario
           key={grupo.id}
           nombre={grupo.titulo}
