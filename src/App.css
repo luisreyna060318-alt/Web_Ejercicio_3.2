@@ -33,6 +33,11 @@
   font-size: 1.25rem;
 }
 
+.app__nota {
+  margin: -12px 0 20px;
+  color: var(--texto-suave);
+}
+
 .app__marco-pagina {
   display: flex;
   flex-direction: column;
