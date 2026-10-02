@@ -32,6 +32,12 @@ src/
   App.tsx          muestra cada ejercicio en su propia sección
 ```
 
+## Documentación
+
+`docs/Ejercicio_3.2_Documentacion.docx` describe cada ejercicio: objetivo,
+desarrollo, cumplimiento de requisitos, respuestas a las preguntas de
+verificación y espacios para las capturas de código y de resultado.
+
 ## Avance
 
 - [x] Ejercicio 1 — Tu primer componente y JSX
