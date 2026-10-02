@@ -1,0 +1,37 @@
+.tarjeta-usuario {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-top: 4px solid var(--acento);
+  border-radius: 12px;
+  box-shadow: var(--sombra);
+}
+
+.tarjeta-usuario__nombre {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+}
+
+.tarjeta-usuario__descripcion {
+  flex: 1;
+  margin: 0 0 16px;
+}
+
+.tarjeta-usuario__tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tarjeta-usuario__tecnologias li {
+  padding: 4px 12px;
+  font-size: 0.85rem;
+  color: var(--acento);
+  background: var(--acento-fondo);
+  border-radius: 999px;
+}

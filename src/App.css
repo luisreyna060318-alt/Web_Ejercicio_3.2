@@ -1,0 +1,34 @@
+.app {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 40px 16px 64px;
+}
+
+.app__encabezado {
+  margin-bottom: 40px;
+}
+
+.app__encabezado h1 {
+  margin: 4px 0 0;
+  font-size: 2rem;
+}
+
+.app__materia {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--acento);
+}
+
+.app__ejercicio {
+  padding-top: 24px;
+  margin-bottom: 48px;
+  border-top: 1px solid var(--borde);
+}
+
+.app__titulo-ejercicio {
+  margin: 0 0 20px;
+  font-size: 1.25rem;
+}

@@ -1,0 +1,44 @@
+.tarjeta-personal {
+  max-width: 420px;
+  padding: 24px;
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-top: 4px solid var(--acento);
+  border-radius: 12px;
+  box-shadow: var(--sombra);
+}
+
+.tarjeta-personal__nombre {
+  margin: 0 0 8px;
+  font-size: 1.5rem;
+}
+
+.tarjeta-personal__descripcion {
+  margin: 0 0 16px;
+}
+
+.tarjeta-personal__subtitulo {
+  margin: 0 0 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--texto-suave);
+}
+
+.tarjeta-personal__tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tarjeta-personal__tecnologias li {
+  padding: 4px 12px;
+  font-size: 0.9rem;
+  color: var(--acento);
+  background: var(--acento-fondo);
+  border-radius: 999px;
+}
