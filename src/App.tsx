@@ -1,5 +1,6 @@
 import TarjetaPersonal from './ejercicios/ejercicio-1/TarjetaPersonal';
 import Ejercicio2 from './ejercicios/ejercicio-2/Ejercicio2';
+import PaginaPerfil from './ejercicios/ejercicio-3/PaginaPerfil';
 import './App.css';
 
 function App() {
@@ -20,6 +21,17 @@ function App() {
           Ejercicio 2 — Props: de un componente fijo a uno reutilizable
         </h2>
         <Ejercicio2 />
+      </section>
+
+      <section className="app__ejercicio">
+        <h2 className="app__titulo-ejercicio">
+          Ejercicio 3 — Composición: una página armada de varios componentes
+        </h2>
+        {/* PaginaPerfil devuelve un Fragmento, así que este marco solo sirve
+            para mostrarla aquí como si fuera una página independiente. */}
+        <div className="app__marco-pagina">
+          <PaginaPerfil />
+        </div>
       </section>
     </main>
   );

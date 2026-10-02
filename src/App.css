@@ -32,3 +32,20 @@
   margin: 0 0 20px;
   font-size: 1.25rem;
 }
+
+.app__marco-pagina {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 720px;
+  padding: 32px;
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: 12px;
+}
+
+@media (max-width: 600px) {
+  .app__marco-pagina {
+    padding: 20px 16px;
+  }
+}

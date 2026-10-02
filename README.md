@@ -22,6 +22,7 @@ src/
   ejercicios/
     ejercicio-1/   TarjetaPersonal (componente con datos fijos)
     ejercicio-2/   TarjetaUsuario (props tipadas) + contenedor Ejercicio2
+    ejercicio-3/   PaginaPerfil = Encabezado + TarjetaUsuario + PiePagina
   App.tsx          muestra cada ejercicio en su propia sección
 ```
 
@@ -29,7 +30,7 @@ src/
 
 - [x] Ejercicio 1 — Tu primer componente y JSX
 - [x] Ejercicio 2 — Props: de un componente fijo a uno reutilizable
-- [ ] Ejercicio 3 — Composición: una página armada de varios componentes
+- [x] Ejercicio 3 — Composición: una página armada de varios componentes
 - [ ] Ejercicio 4 — Listas: renderizar una colección de tarjetas
 - [ ] Ejercicio 5 — Estado con useState
 - [ ] Ejercicio 6 — Reto integrador: una página completa
